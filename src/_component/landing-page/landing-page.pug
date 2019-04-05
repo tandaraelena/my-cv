@@ -1,0 +1,20 @@
+-
+  var myFullName = 'Elena Tandara'
+  var myJobTitle = 'Junior Web Developer'
+  var socialList = [
+    {icon: 'facebook2', url: 'https://www.facebook.com/tandara.elena.9?ref=bookmarks'},
+    {icon: 'youtube', url: 'https://youtube.com/codetap'},
+    {icon: 'github', url: 'https://github.com/tandaraelena'},
+    {icon: 'linkedin', url: 'https://www.linkedin.com/in/elena-țandără-35a426150/'},
+    {icon: 'earth', url: 'http://bitbee.uk'}
+  ]
+#landing-page
+.landing-page
+  .landing-page_wrapper
+    h1.landing-page_name=myFullName
+    h2.landing-page_title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for=" ")
+            span(class=`my-cv__icon--${social.icon}`)
