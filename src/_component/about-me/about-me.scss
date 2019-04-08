@@ -1,34 +1,32 @@
 .about-me {
   background-image: radial-gradient(
     ellipse,
-    #ffc7b3,
-    #ff571a);
+    $color-royal-blue,
+    $color-downriver);
 }
 
 .about-me__header {
-  color: white;
-  margin-bottom: 1rem;
-  padding: 1rem 2rem;
-  font-size: 3rem;
+  color: $color-twilight;
+  @extend %header;
 }
 
 .about-me__avatar {
   border-radius: 50%;
   width: 100%;
-  border: 0.5rem solid  #ffc7b3;
+  border: 0.5rem solid $color-royal-blue;
 }
 
 .about-me__avatar-wrapper {
   max-width: 50%;
   margin: 1rem auto;
-  border: 0.5rem solid rgba(255,255,255,0.3);
+  border: 0.5rem solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   position: relative;
 
   &::after {
     content: '';
     position: absolute;
-    border: 0.5rem solid rgba(255,255,255,0.3); 
+    border: 0.5rem solid rgba(255, 255, 255, 0.3); 
     top: -1.5rem;
     bottom: -1.5rem;
     left: -1.5rem;
@@ -49,7 +47,7 @@
 .about-me__full-name {
   padding: 1rem;
   text-align: center;
-  color: #ff6933;
+  color: $color-yellow-sea;
 }
 
 .about-me__slogan,
@@ -58,7 +56,7 @@
   text-align: justify;
   padding: 1rem;
   text-indent: 3rem;
-  color: #ffdacc;
+  color: $color-sunglow;
 }
 
 .about-me__link-list {
@@ -71,10 +69,10 @@
   width: 80%;
   font-size: 3rem;
   text-decoration: none;
-  border: 0.1rem solid #cc3600;
+  border: 0.1rem solid $color-gumbo;
   border-radius: 1rem;
-  background-color: white;
-  color: #cc3600;
+  background-color: $color-white;
+  color: $color-gumbo;
   margin: 1rem auto;
   display: flex;
   justify-content: space-around;
