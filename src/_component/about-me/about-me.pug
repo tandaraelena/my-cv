@@ -7,21 +7,21 @@
     var slogan = `The best way to succeed is to learn for yourself and be happy to discover small things.`
     var achievement = {
         title: 'Achievement',
-        content: `I've built a custom SEO CMS that boosted search results position in Google's first places for tens of clients and their websites without any additional effort and minimum training.`
+        content: `I update myself everyday, to be better, to be creative, to be on top.`
     }
 
     var coolStuff = {
-        title: "T",
+        title: "Grab cool stuff",
         buttonList: [
-            ,{
-                url: 'https://github.com/tandaraelena',
+            {
+                url: 'https://github.com/tandaraelena/my-cv',
                 icon: 'github',
                 label: `Click to visit the Github project source`
             }
             ,{
-                url: 'https://github.com/tandaraelena',
-                icon: 'github',
-                label: `Click to visit the Github project source`
+                url: "asset/doc/cv.docx",
+                icon: 'file-word',
+                label: `Click to download my CV word version`
             }
         ]
     }
@@ -32,14 +32,15 @@
     .about-me__avatar-wrapper
         img.about-me__avatar(src=imagePath)
     .about-me__full-name=myFullName
-    .about-me__full-title=myTitle
+    .about-me__title=myTitle
     .about-me__slogan=slogan
+
     .about-me__title=achievement.title
     .about-me__content=achievement.content
 
     .about-me__title=coolStuff.title
     .about-me__link-list
-      each button in coolStuff.buttonList
-          a.about-me__link(href=button.url)
-              span.about-me__link-description=button.label
-              span(class=`.my-cv__icon--${button.icon}`)
+        each button in coolStuff.buttonList
+            a.about-me__link(href=button.url)
+                span.about-me__link-description=button.label
+                span(class=`my-cv__icon--${button.icon}`)
