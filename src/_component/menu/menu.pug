@@ -34,10 +34,10 @@
 
 #menu
 a.menu__go-to(href="#menu")
-  span.my-cv__icon--menu3
+    span.my-cv__icon--menu3
 .menu
     .menu__list
         each menu in menuList
             a.menu__link(href=menu.link)
-                span(className=`my-cv__icon--${menu.icon}`)
-                span=menu.label
+                span(class=`my-cv__icon--${menu.icon}`)
+                span.menu__label=menu.label

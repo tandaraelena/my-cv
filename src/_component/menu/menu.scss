@@ -12,7 +12,7 @@
 .menu__link {
   display: flex;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: $color-gumbo;
   text-decoration: none;
   border-bottom: 0.1rem solid $color-gumbo;
@@ -36,4 +36,13 @@ menu.label {
     padding: 1rem;
     border-radius: 0.5rem;
     text-decoration: none;
+}
+
+.my-cv__icon--home,
+.my-cv__icon--wink,
+.my-cv__icon--trophy,
+.my-cv__icon--airplane,
+.my-cv__icon--hammer,
+.my-cv__icon--briefcase {
+  padding-right: 0.5rem;
 }
