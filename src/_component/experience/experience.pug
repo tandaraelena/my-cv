@@ -22,8 +22,6 @@
 .experience
     .experience__header=header
     each experience, key in experienceList
-        input(type="radio", name="same-name", id="experience-default")
-        label(for="experience-default") &times;
         input.experience__input(type="radio", name="same-name", id=`experience-id-${key}`)
         label.experience__title(for=`experience-id-${key}`)=experience.title
         .experience__details
