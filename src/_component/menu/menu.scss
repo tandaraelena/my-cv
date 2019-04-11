@@ -11,7 +11,7 @@
 
 .menu__link {
   display: flex;
-  padding: 1rem;
+  padding: 0.7rem;
   font-size: 2rem;
   color: $color-gumbo;
   text-decoration: none;
@@ -22,8 +22,8 @@
   }
 }
 
-menu.label {
-  padding: 1rem;
+.menu__label {
+  padding: 0.3rem;
 }
 
 .menu__go-to {
@@ -36,13 +36,4 @@ menu.label {
     padding: 1rem;
     border-radius: 0.5rem;
     text-decoration: none;
-}
-
-.my-cv__icon--home,
-.my-cv__icon--wink,
-.my-cv__icon--trophy,
-.my-cv__icon--airplane,
-.my-cv__icon--hammer,
-.my-cv__icon--briefcase {
-  padding-right: 0.5rem;
 }
