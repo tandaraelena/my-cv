@@ -2,15 +2,18 @@
 .experience__input {
   display: none;
 }
+
 .experience__input:checked + 
 .experience__title +
 .experience__details {
   display: inherit;
 }
+
 .experience__header {
   color: $color-fiord;
   @extend %header;
 }
+
 .experience__title {
   background-color: $color-gumbo;
   color: $color-white;
